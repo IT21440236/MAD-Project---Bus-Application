@@ -11,6 +11,8 @@ Blues Application enables users to book their trips before hand for long journey
 ## Preview
 
 
-Uploading blues.mp4…
+
+https://user-images.githubusercontent.com/96247301/213456413-348f6636-7f28-47ef-8059-0db95bed9730.mp4
+
 
 [Bus App.pdf](https://github.com/IT21440236/MAD-Project---Bus-Application/files/10457149/Bus.App.pdf)
