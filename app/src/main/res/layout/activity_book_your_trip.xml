@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue1">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_booktrip"
+        android:layout_width="78dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/gradient_blue"
+        android:text="Book Trip"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputNoOfPassengers"
+        app:layout_constraintStart_toEndOf="@+id/btn_set"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_set"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/gradient_green"
+        android:text="Set"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/inputExpiryDate3"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <EditText
+        android:id="@+id/inputExpiryDate3"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/white"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Date &amp; Time"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/inputNoOfPassengers"
+        app:layout_constraintTop_toBottomOf="@+id/inputNoOfPassengers" />
+
+    <EditText
+        android:id="@+id/inputFrom"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/white"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="From"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/book_your_trip"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <EditText
+        android:id="@+id/inputWhereto"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/white"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Where to"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/inputFrom"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <EditText
+        android:id="@+id/inputNoOfPassengers"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/white"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="No of passengers"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/inputWhereto"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <TextView
+        android:id="@+id/blues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="168dp"
+        android:fontFamily="serif"
+        android:text="Blues"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/book_your_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Book Your Trip"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blues" />
+
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toEndOf="@+id/blues"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/blues"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24"
+        tools:layout_editor_absoluteY="39dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
